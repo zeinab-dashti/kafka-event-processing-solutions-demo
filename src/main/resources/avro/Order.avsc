@@ -1,0 +1,14 @@
+{
+  "namespace": "space.zeinab.demo.avro",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    { "name": "orderId",       "type": "string" },
+    { "name": "customerId",    "type": "string" },
+    { "name": "orderAmount",   "type": "long"   },
+    {
+      "name": "orderDateTime",
+      "type": { "type": "long", "logicalType": "timestamp-millis" }
+    }
+  ]
+}

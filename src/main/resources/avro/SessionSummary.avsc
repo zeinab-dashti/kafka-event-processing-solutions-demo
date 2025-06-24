@@ -1,0 +1,11 @@
+{
+  "namespace": "space.zeinab.demo.avro",
+  "type": "record",
+  "name": "SessionSummary",
+  "fields": [
+    { "name": "customerId",  "type": "string" },
+    { "name": "sessionStart","type": { "type": "long", "logicalType": "timestamp-millis" } },
+    { "name": "sessionEnd",  "type": { "type": "long", "logicalType": "timestamp-millis" } },
+    { "name": "totalAmount", "type": "long" }
+  ]
+}
